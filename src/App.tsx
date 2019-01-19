@@ -1,7 +1,9 @@
 import * as React from 'react';
+import Helmet from 'react-helmet';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import './App.css';
-
 import logo from './logo.svg';
+import { Home, About } from './containers';
 
 class App extends React.Component {
   public render() {
