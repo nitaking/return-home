@@ -6,5 +6,16 @@
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "no-console": false,
+    "prettier": [
+      true,
+      {
+        "singleQuote": true,
+        "semi": true
+      }
+    ]
   }
 }
