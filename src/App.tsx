@@ -7,12 +7,27 @@ class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <Helmet title="Default title" />
+        <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+          <h2>Welcome to React</h2>
+        </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
+          <Router>
+            <div>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+              </ul>
+              <hr />
+              <Route exact={true} path="/" component={Home} />
+              <Route path="/about" component={About} />
+            </div>
+          </Router>
         </p>
       </div>
     );
