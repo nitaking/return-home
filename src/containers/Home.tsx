@@ -14,7 +14,7 @@ const Home = () => (
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'http://path/to/this/url' },
         { property: 'og:image', content: 'http://path/to/image' },
-        { property: 'og:description', content: 'description of Home' },
+        { property: 'og:description', content: 'home descriptionをこちらに書きます' },
       ]}
     />
     <h2>Home</h2>
