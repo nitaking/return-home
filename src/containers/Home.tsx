@@ -8,7 +8,7 @@ const Home = () => (
       meta={[
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: 'Home' },
-        { name: 'twitter:description', content: 'description of Home' },
+        { name: 'twitter:description', content: 'Twitter description of Home' },
         { name: 'twitter:image', content: 'http://path/to/image' },
         { property: 'og:title', content: 'Home' },
         { property: 'og:type', content: 'website' },
